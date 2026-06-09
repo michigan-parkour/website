@@ -355,6 +355,73 @@ a:hover {
   aspect-ratio: 2 / 1;
 }
 
+.challenges {
+  display: grid;
+  grid-template-columns: minmax(24rem, 0.46fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  padding-top: clamp(3.5rem, 7vw, 6rem);
+  border-top: 1px solid var(--line);
+}
+
+.challenges h2 {
+  margin: 0;
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  letter-spacing: 0;
+  line-height: 0.98;
+}
+
+.challenges-copy p {
+  max-width: 44rem;
+  margin: 0;
+  font-size: clamp(1.03rem, 1.6vw, 1.18rem);
+}
+
+.challenges-copy p + p {
+  margin-top: 1rem;
+}
+
+.challenge-previews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+  max-width: 34rem;
+}
+
+.challenge-previews img {
+  width: 100%;
+  aspect-ratio: 6 / 13;
+  border-radius: 0.35rem;
+  object-fit: cover;
+  background: var(--ink);
+}
+
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.store-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--leaf-dark);
+  border-radius: 0.35rem;
+  color: var(--leaf-dark);
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.store-links a:hover {
+  border-color: var(--brick);
+  color: var(--panel);
+  background: var(--brick);
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -440,7 +507,8 @@ a:hover {
   }
 
   .intro,
-  .about-grid {
+  .about-grid,
+  .challenges {
     grid-template-columns: 1fr;
   }
 
