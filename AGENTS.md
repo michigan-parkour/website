@@ -2,13 +2,29 @@
 
 ## Project
 
-- Static website for Michigan Parkour.
+- Static website for Michigan Parkour at `https://michiganparkour.com`.
 - Main page: `index.html`.
 - Styles: `assets/styles.css`.
 - Images: `assets/images/`.
 - Git branch: `main`.
 - Public repository: `https://github.com/michigan-parkour/website`.
 - Cloudflare Pages deploys after changes are pushed.
+
+## Canonical Site
+
+- Make content, photo, and deployment changes for `https://michiganparkour.com`.
+- Do not update the old `umichparkour.com` website or older GitHub Pages/archive
+  repositories unless the user explicitly asks for legacy-site work.
+- Treat `https://michiganparkour.com` as the canonical apex domain.
+- If configuring permanent redirects from the old website, send all old-domain
+  variants to `https://michiganparkour.com/`:
+  - `http://umichparkour.com/*`
+  - `https://umichparkour.com/*`
+  - `http://www.umichparkour.com/*`
+  - `https://www.umichparkour.com/*`
+- Use a temporary redirect while testing when possible, then switch to `308`
+  once confirmed. Because the current site is primarily one page, redirect old
+  paths to the homepage unless a specific old URL needs a deliberate mapping.
 
 ## Local Preview
 
