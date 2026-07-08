@@ -355,6 +355,10 @@ a:hover {
   aspect-ratio: 2 / 1;
 }
 
+.gallery-grid .focus-high {
+  object-position: 50% 20%;
+}
+
 .challenges {
   display: grid;
   grid-template-columns: minmax(24rem, 0.46fr) minmax(0, 1fr);
